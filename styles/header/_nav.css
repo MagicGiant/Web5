@@ -1,0 +1,21 @@
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.header__nav-item {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header__nav-item-text {
+    color: #333;
+    font-size: 1.3em;
+}
+
+.header__nav-space {
+    width: 10px;
+}

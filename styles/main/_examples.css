@@ -1,0 +1,16 @@
+.main__examples{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main__examples-example{
+    width: 200px;
+    height:auto;
+}
+
+.main__examples-example-img{
+    border-radius: 10px;
+    width: 100%;
+}

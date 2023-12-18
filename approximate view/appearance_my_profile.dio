@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="NZon_rsgo3XaOJRdt-bF" name="Page-1">
+        <mxGraphModel dx="1120" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="50" width="700" height="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="img" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="60" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="поиск" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="65" width="540" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Проф" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="60" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Создать" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="110" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Подписки" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="110" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="115" y="160" width="170" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Name" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="340" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="490" width="150" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Мои работы" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="440" width="580" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="490" width="150" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="490" width="150" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="490" width="150" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Сортировать по" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="625" y="390" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Информация" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="355" y="160" width="400" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Лайки,&lt;br&gt;просмотры" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="700" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Число&lt;br&gt;подписок" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="705" y="440" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
