@@ -1,5 +1,6 @@
 @import './_top.css';
 @import './_logo.css';
 @import './_search.css';
-@import './_profile.css';
+@import './_profile_avatar.css';
+@import './_profile_info.css';
 @import './_nav.css';

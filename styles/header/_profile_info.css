@@ -1,0 +1,30 @@
+.header__profile_info{
+    margin: 20px 150px 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header__profile_info-right{
+    width: 60%;
+    padding: 20px;
+    background-color:#eee;
+    border-radius: 10px;
+}
+
+.header__profile_info__text{
+    font-size: 1.5rem;
+    color: rgb(88, 88, 88);
+}
+
+.header__profile_info-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__profile_info__name{
+    font-size: 2.5rem;
+    color: gray;
+}
