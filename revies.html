@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арт галерея</title>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-text">АртГалерея</span>
+      </a>
+      <div class="header__search">
+        <input type="text" placeholder="Поиск" class="header__search-input">
+        <button class="header__search-btn">Поиск</button>
+      </div>
+      <a href="profile.html" class="header__profile">
+        <img src="images/ava.jpg" alt="Аватар" class="header__profile-avatar">
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-item">
+          <span class="header__nav-item-text">Главная</span></a>
+      <div class="header__nav-space"></div>
+      <a href="revies.html" class="header__nav-item">
+          <span class="header__nav-item-text">Отзывы</span></a>
+    </nav>
+  </header>
+
+    <main class="main">
+        <form class="revies-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name">
+            <label for="rating">Оценка:</label>
+
+            <select id="rating" name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="revies-text">Отзыв</label>
+            <input type="text" id="revies-text">
+
+            <button onclick="populateTableFromLocalStorage()" type="submit">Подтвердить</button>
+      </form>
+
+      <table class="reviews-table" id="reviews-table">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Оценка</th>
+                <th>Отзыв</th>
+            </tr>
+        </thead>
+        <tbody id="reviews-table__lines">
+        </tbody>
+    </table>
+
+    </main>    
+
+    <script src="js/revies.js"></script>
+</body>
