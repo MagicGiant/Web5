@@ -1,4 +1,4 @@
-addImages(3, 5);
+addImages(3, 5, -1);
 
 async function getObjectFromIP(url) {
     try {
@@ -32,7 +32,30 @@ async function filterObjectsByIds(objects, targetIds) {
     }
 }
 
-async function addImages(albums_count, objects_count) {
+function filterItems(){
+    const searchText = document.getElementById("find_img-inp").value;
+
+    const items = document.querySelectorAll('.album_conteiner');
+
+    var is_found = false;
+    items.forEach(item =>{
+        if(new RegExp(searchText).test(item.id)){
+            is_found = true
+        }
+        else{
+            item.style.display = 'none';
+        }
+    })
+
+    if (is_found){
+        console.log("Album found");
+    }
+    else{
+        console.log("console not found");
+    }
+}
+
+async function addImages(albums_count, objects_count, album_id) {
     try {
         const objects = await getObjectFromIP("https://jsonplaceholder.typicode.com/photos");
         const ids = Array.from(getAlbumIds(objects));
@@ -42,23 +65,32 @@ async function addImages(albums_count, objects_count) {
 
         conteiner = document.getElementById("image");
         for (const id of shuffledIds) {
+            if (album_id != -1 && album_id != id){
+                continue;
+            }
+
+            var albumConteiner = document.createElement("div");
             var album = document.createElement("div");
             var gradLine = document.createElement("hr");
             var titleText = document.createElement("span");
+
+            albumConteiner.id = "album" + id
+            albumConteiner.className = "album_conteiner"
 
             album.className = "main__album";
             gradLine.className = "grad_line";
             titleText.className = "main__album-name";
             titleText.textContent = "Альбом: " + id
 
-            conteiner.appendChild(album);
+            conteiner.appendChild(albumConteiner);
+            albumConteiner.appendChild(album);
             album.appendChild(gradLine);
             album.appendChild(titleText);
             album.appendChild(gradLine.cloneNode(true));
 
             var examples = document.createElement("div");
             examples.className = "main__examples";
-            conteiner.appendChild(examples);
+            albumConteiner.appendChild(examples);
 
             let objects_count_current = 0
             for (const object of filteredObjects) {
@@ -101,3 +133,8 @@ function getAlbumIds(objects) {
     }
     return ids;
 }
+
+function clearImages() {
+    const container = document.getElementById('image');
+    container.innerHTML = '';
+  }
