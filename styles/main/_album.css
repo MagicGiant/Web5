@@ -1,10 +1,10 @@
-.main__author{
+.main__album{
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.main__author-name{
+.main__album-name{
     display: flex;
     justify-content: center;
     color: gray;
