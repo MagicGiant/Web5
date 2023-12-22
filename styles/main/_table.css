@@ -5,8 +5,8 @@
 }
 
 .reviews-table-thread {
-    background-color: #eee;
-    color: black;
+    background-color: gray;
+    color: white;
 }
 
 .reviews-table-tr {
@@ -24,14 +24,12 @@
     align-items: start;
 } */
 
-.reviews-table-th__review{
+.reviews-table-th__revie{
     font-weight: 90%;
 }
 
-
-
-.reviews-table-td:nth-child(2) {
-    text-align: center;
+.reviews-table__lines tr:nth-child(even){
+    background-color: #eee;
 }
 
 .reviews-table-td:last-child {
