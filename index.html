@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Арт галерея</title>
     <link rel="stylesheet" href="styles/global.css">
-    
-    <script src="js/index.js"></script>
-    <script src="js/nav.js"></script>
+
+    <script src="js/timePageLoader.js"></script>
 </head>
 
-<body>
-  <header class="header">
+<body class="my_body">
+  <header class="my_header">
     <div class="header__top">
       <a href="index.html" class="header__logo">
         <span class="header__logo-text">АртГалерея</span>
@@ -20,7 +19,7 @@
         <input type="text" placeholder="Поиск" class="header__search-input" id="find_img-inp">
         <button class="header__search-btn" id="find_img-btn" onclick="filterItems()">Поиск</button>
       </div>
-      <a href="profile.html" class="header__profile">
+      <a href="#" class="header__profile">
         <img src="images/ava.jpg" alt="Аватар" class="header__profile-avatar">
       </a>
     </div>
@@ -79,4 +78,6 @@
   </footer>
 
 
+  <script src="js/index.js"></script>
+  <script src="js/nav.js"></script>
 </body> 

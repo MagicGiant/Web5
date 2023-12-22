@@ -137,4 +137,4 @@ function getAlbumIds(objects) {
 function clearImages() {
     const container = document.getElementById('image');
     container.innerHTML = '';
-  }
+}

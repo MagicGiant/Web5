@@ -2,11 +2,11 @@
 @import './main/main.css';
 @import './footer/footer.css';
 
-main{
+.my_main{
     flex: 1;
 }
 
-body{
+.my_body{
     margin: 0;
     padding: 0;
     display: flex;
