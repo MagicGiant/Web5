@@ -8,71 +8,74 @@
 </head>
 
 <body>
-    <header class="my_header">
-      <div class="header__top">
-        <a href="index.html" class="header__logo">
-          <span class="header__logo-text">АртГалерея</span>
-        </a>
-        <div class="header__search">
-          <input type="text" placeholder="Поиск" class="header__search-input">
-          <button class="header__search-btn">Поиск</button>
+  <header class="header">
+    <div class="header__top">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-text">АртГалерея</span>
+      </a>
+      <div class="header__search">
+        <input type="text" placeholder="Поиск" class="header__search-input">
+        <button class="header__search-btn">Поиск</button>
+      </div>
+      <a href="profile.html" class="header__profile">
+        <img src="images/ava.jpg" alt="Аватар" class="header__profile-avatar">
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-item" onclick="changePage('index.html')">
+          <span class="header__nav-item-text">Главная</span></a>
+      <div class="header__nav-space"></div>
+      <a href="revies.html" class="header__nav-item" onclick="changePage('revies.html')">
+          <span class="header__nav-item-text">Отзывы</span></a>
+    </nav>
+  </header>
+
+  <main class="my_main">
+    <div class="main__images" id="image"></div>
+      <!-- <div class="main__sorting">
+          <span class="main__sorting-label">Сортировать по:</span>
+          <select class="main__sorting-select">
+          <option value="likes">Количество лайков</option>
+          <option value="subscriptions">Подписки</option>
+          <option value="views">Просмотры</option>
+          </select>
+      </div> -->
+
+      <!-- <div class="main__album" id="album">
+        <hr class="grad_line" id="grad_line">
+        <span class="main__album-name" id="album-name"">Альбом</span>
+        <hr class="grad_line" id="grad_line">
+      </div>
+    
+      <div class="main__examples">
+        <div class="main__examples-example">
+          <img class="main__examples-example-img" src="images/authors/Avogado6/example1.jpg" alt="example1">
         </div>
-        <a href="profile.html" class="header__profile">
-          <img src="images/ava.jpg" alt="Аватар" class="header__profile-avatar">
-        </a>
-      </div>
+        -->
+  </main>
 
-      <nav class="header__nav">
-        <a href="index.html" class="header__nav-item">
-            <span class="header__nav-item-text">Главная</span></a>
-        <div class="header__nav-space"></div>
-        <a href="revies.html" class="header__nav-item">
-            <span class="header__nav-item-text">Отзывы</span></a>
-      </nav>
-    </header>
 
-    <main class="my_main">
-      <div class="main__images" id="image"></div>
-        <!-- <div class="main__sorting">
-            <span class="main__sorting-label">Сортировать по:</span>
-            <select class="main__sorting-select">
-            <option value="likes">Количество лайков</option>
-            <option value="subscriptions">Подписки</option>
-            <option value="views">Просмотры</option>
-            </select>
-        </div> -->
+  <footer class="my_footer">
+    <div class="left_footer">
+      <pre class="logo_ascii">
+    _____          __                  .__  .__                       
+   /  _  \________/  |_     _________  |  | |  |   ___________ ___.__.
+  /  /_\  \_  __ \   __\   / ___\__  \ |  | |  | _/ __ \_  __ <   |  |
+ /    |    \  | \/|  |    / /_/  > __ \|  |_|  |_\  ___/|  | \/\___  |
+ \____|__  /__|   |__|    \___  (____  /____/____/\___  >__|   / ____|
+         \/              /_____/     \/               \/       \/     
+      </pre>
+    </div>
+    
+    <div class="right_footer">
+      <a href="#"><img class="social_logo" src="images/footer/instagram.png" alt="instagram"></a>
+      <a href="#"><img class="social_logo" src="images/footer/vk-logo.png" alt="vk_logo"></a>
+      <a href="#"><img class="social_logo" src="images/footer/youtube.png" alt="youtube"></a>
+    </div>
+  </footer>
 
-        <!-- <div class="main__album" id="album">
-          <hr class="grad_line" id="grad_line">
-          <span class="main__album-name" id="album-name"">Альбом</span>
-          <hr class="grad_line" id="grad_line">
-        </div>
-      
-        <div class="main__examples">
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Avogado6/example1.jpg" alt="example1">
-          </div>
-         -->
-    </main>
-
-    <script src="js/index.js"></script>
-
-    <footer class="my_footer">
-      <div class="left_footer">
-        <pre class="logo_ascii">
-   _____          __                  .__  .__                       
-  /  _  \________/  |_     _________  |  | |  |   ___________ ___.__.
- /  /_\  \_  __ \   __\   / ___\__  \ |  | |  | _/ __ \_  __ <   |  |
-/    |    \  | \/|  |    / /_/  > __ \|  |_|  |_\  ___/|  | \/\___  |
-\____|__  /__|   |__|    \___  (____  /____/____/\___  >__|   / ____|
-        \/              /_____/     \/               \/       \/     
-        </pre>
-      </div>
-      
-      <div class="right_footer">
-        <a href="#"><img class="social_logo" src="images/footer/instagram.png" alt="instagram"></a>
-        <a href="#"><img class="social_logo" src="images/footer/vk-logo.png" alt="vk_logo"></a>
-        <a href="#"><img class="social_logo" src="images/footer/youtube.png" alt="youtube"></a>
-      </div>
-    </footer>
+  
+  <script src="js/index.js"></script>
+  <script src="js/nav.js"></script>
 </body> 

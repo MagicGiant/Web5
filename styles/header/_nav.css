@@ -19,3 +19,7 @@
 .header__nav-space {
     width: 10px;
 }
+
+.header__nav-item.active{
+    font-weight: bold;
+}

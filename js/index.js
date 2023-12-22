@@ -101,4 +101,3 @@ function getAlbumIds(objects) {
     }
     return ids;
 }
-
