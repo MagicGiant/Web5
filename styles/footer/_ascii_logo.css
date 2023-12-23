@@ -1,0 +1,9 @@
+/* .logo_ascii{
+    border: 2px solid black
+} */
+
+@media screen and (max-width: 800px){
+    .logo_ascii{
+        display: none
+    }
+}

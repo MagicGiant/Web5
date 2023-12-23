@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арт галерея</title>
+    <link rel="stylesheet" href="styles/global.css">
+
+    <script src="js/timePageLoader.js"></script>
+</head>
+
+<body class="my_body">
+  <header class="my_header">
+    <div class="header__top">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-text">АртГалерея</span>
+      </a>
+      <div class="header__search">
+        <input type="text" placeholder="Поиск" class="header__search-input">
+        <button class="header__search-btn">Поиск</button>
+      </div>
+      <a href="#" class="header__profile">
+        <img src="images/ava.jpg" alt="Аватар" class="header__profile-avatar">
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-item" onclick="changePage('index.html')">
+          <span class="header__nav-item-text">Главная</span></a>
+      <div class="header__nav-space"></div>
+      <a href="revies.html" class="header__nav-item" onclick="changePage('revies.html')">
+          <span class="header__nav-item-text">Отзывы</span></a>
+    </nav>
+  </header>
+
+    <main class="my_main">
+      <div class="form_layout">
+        <form class="revies-form">
+
+            <div class="label-conteiner">
+            <label class="revies-form-label" for="name">Имя:</label>
+            <input class="revies-form-input" type="text" id="name">
+            </div>
+
+            <div class="label-conteiner">
+            <label class="revies-form-label" for="rating">Оценка:</label>
+
+            <select class="revies-form-input" id="rating" name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class="label-conteiner">
+            <label class="revies-form-label" for="revies-text">Отзыв:</label>
+            <input class="revies-form-input" type="text" id="revies-text">
+          </div>
+
+          <div class="label-conteiner">
+            <button class="revies-form-bottom" onclick="populateTableFromLocalStorage()" type="submit">Подтвердить</button>
+          </div>
+        </form>
+      </div>
+
+      <table class="reviews-table" id="reviews-table">
+        <thead class="reviews-table-thread">
+            <tr class="reviews-table-tr">
+                <th class="reviews-table-th__name">Имя</th>
+                <th class="reviews-table-th__grade">Оценка</th>
+                <th class="reviews-table-th__review">Отзыв</th>
+            </tr>
+        </thead>
+        <tbody class="reviews-table__lines" id="reviews-table__lines">
+        </tbody>
+      </table>
+
+    </main>    
+    
+    <footer class="my_footer">
+      <div class="left_footer">
+        <pre class="logo_ascii">
+   _____          __                  .__  .__                       
+  /  _  \________/  |_     _________  |  | |  |   ___________ ___.__.
+ /  /_\  \_  __ \   __\   / ___\__  \ |  | |  | _/ __ \_  __ <   |  |
+/    |    \  | \/|  |    / /_/  > __ \|  |_|  |_\  ___/|  | \/\___  |
+\____|__  /__|   |__|    \___  (____  /____/____/\___  >__|   / ____|
+        \/              /_____/     \/               \/       \/     
+        </pre>
+      </div>
+      
+      <div class="right_footer">
+        <a href="#"><img class="social_logo" src="images/footer/instagram.png" alt="instagram"></a>
+        <a href="#"><img class="social_logo" src="images/footer/vk-logo.png" alt="vk_logo"></a>
+        <a href="#"><img class="social_logo" src="images/footer/youtube.png" alt="youtube"></a>
+      </div>
+    </footer>
+
+    
+    <script src="js/nav.js"></script>
+    <script src="js/revies.js"></script>
+    <script src="js/voice_control.js"></script>
+</body>

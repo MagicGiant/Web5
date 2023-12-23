@@ -5,97 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Арт галерея</title>
     <link rel="stylesheet" href="styles/global.css">
+
+    <script src="js/timePageLoader.js"></script>
 </head>
 
-<body>
-    <header class="header">
-      <div class="header__top">
-        <a href="index.html" class="header__logo">
-          <span class="header__logo-text">АртГалерея</span>
-        </a>
-        <div class="header__search">
-          <input type="text" placeholder="Поиск" class="header__search-input">
-          <button class="header__search-btn">Поиск</button>
-        </div>
-        <a href="profile.html" class="header__profile">
-          <img src="images/ava.jpg" alt="Аватар" class="header__profile-avatar">
-        </a>
+<body class="my_body">
+  <header class="my_header">
+    <div class="header__top">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-text">АртГалерея</span>
+      </a>
+      <div class="header__search">
+        <input type="text" placeholder="Поиск" class="header__search-input" id="find_img-inp">
+        <button class="header__search-btn" id="find_img-btn" onclick="filterItems()">Поиск</button>
       </div>
+      <a href="#" class="header__profile">
+        <img src="images/ava.jpg" alt="Аватар" class="header__profile-avatar">
+      </a>
+    </div>
 
-      <nav class="header__nav">
-        <a href="#" class="header__nav-item">
-            <span class="header__nav-item-text">Подписки</span></a>
-        <div class="header__nav-space"></div>
-        <a href="#" class="header__nav-item">
-            <span class="header__nav-item-text">Создать</span></a>
-      </nav>
-    </header>
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-item" onclick="changePage('index.html')">
+          <span class="header__nav-item-text">Главная</span></a>
+      <div class="header__nav-space"></div>
+      <a href="revies.html" class="header__nav-item" onclick="changePage('revies.html')">
+          <span class="header__nav-item-text">Отзывы</span></a>
+    </nav>
+  </header>
 
-    <main class="main">
-        <div class="main__sorting">
-            <span class="main__sorting-label">Сортировать по:</span>
-            <select class="main__sorting-select">
-            <option value="likes">Количество лайков</option>
-            <option value="subscriptions">Подписки</option>
-            <option value="views">Просмотры</option>
-            </select>
+  <main class="my_main">
+    <div class="main__images" id="image"></div>
+      <!-- <div class="main__sorting">
+          <span class="main__sorting-label">Сортировать по:</span>
+          <select class="main__sorting-select">
+          <option value="likes">Количество лайков</option>
+          <option value="subscriptions">Подписки</option>
+          <option value="views">Просмотры</option>
+          </select>
+      </div> -->
+
+      <!-- <div class="main__album" id="album">
+        <hr class="grad_line" id="grad_line">
+        <span class="main__album-name" id="album-name"">Альбом</span>
+        <hr class="grad_line" id="grad_line">
+      </div>
+    
+      <div class="main__examples">
+        <div class="main__examples-example">
+          <img class="main__examples-example-img" src="images/authors/Avogado6/example1.jpg" alt="example1">
         </div>
+        -->
+  </main>
 
-        <div class="main__author">
-          <hr>
-          <span class="main__author-name">Avogado6</span>
-          <hr>
-        </div>
-      
-        <div class="main__examples">
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Avogado6/example1.jpg" alt="example1">
-          </div>
 
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Avogado6/example2.jpg" alt="example2">
-          </div>
+  <footer class="my_footer">
+    <div class="left_footer">
+      <pre class="logo_ascii">
+    _____          __                  .__  .__                       
+   /  _  \________/  |_     _________  |  | |  |   ___________ ___.__.
+  /  /_\  \_  __ \   __\   / ___\__  \ |  | |  | _/ __ \_  __ <   |  |
+ /    |    \  | \/|  |    / /_/  > __ \|  |_|  |_\  ___/|  | \/\___  |
+ \____|__  /__|   |__|    \___  (____  /____/____/\___  >__|   / ____|
+         \/              /_____/     \/               \/       \/     
+      </pre>
+    </div>
+    
+    <div class="right_footer">
+      <a href="#"><img class="social_logo" src="images/footer/instagram.png" alt="instagram"></a>
+      <a href="#"><img class="social_logo" src="images/footer/vk-logo.png" alt="vk_logo"></a>
+      <a href="#"><img class="social_logo" src="images/footer/youtube.png" alt="youtube"></a>
+    </div>
+  </footer>
 
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Avogado6/example3.jpg" alt="example3">
-          </div>
-          
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Avogado6/example4.jpg" alt="example4">
-          </div>
-          
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Avogado6/example5.jpg" alt="example5">
-          </div>
-        </div>
 
-        <div class="main__author">
-          <hr>
-          <span class="main__author-name">Isaac Franklin</span>
-          <hr>
-        </div>
-      
-        <div class="main__examples">
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Isaac/1.jpg" alt="example1">
-          </div>
-
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Isaac/2.jpg" alt="example2">
-          </div>
-
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Isaac/3.jpg" alt="example3">
-          </div>
-          
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Isaac/4.jpg" alt="example4">
-          </div>
-          
-          <div class="main__examples-example">
-            <img class="main__examples-example-img" src="images/authors/Isaac/5.jpg" alt="example5">
-          </div>
-        </div>
-        
-    </main>
-</body>
+  <script src="js/index.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/voice_control.js"></script>
+</body> 

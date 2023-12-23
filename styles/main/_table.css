@@ -1,0 +1,40 @@
+.reviews-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.reviews-table-thread {
+    background-color: gray;
+    color: white;
+}
+
+.reviews-table-tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.reviews-table-th, .reviews-table-td {
+    padding: 15px;
+    text-align: left;
+}
+
+/* .reviews-table-th__name, .reviews-table-th__grade, .reviews-table-th__review{
+    display: flex;
+    width: 100%;
+    align-items: start;
+} */
+
+.reviews-table-th__revie{
+    font-weight: 90%;
+}
+
+.reviews-table__lines tr:nth-child(even){
+    background-color: #eee;
+}
+
+.reviews-table-td:last-child {
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

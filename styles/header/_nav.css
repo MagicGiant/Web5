@@ -6,6 +6,10 @@
     padding: 10px;
 }
 
+.header__nav-item:hover{
+    color: blue;
+}
+
 .header__nav-item {
     text-decoration: none;
     padding: 10px;
@@ -18,4 +22,8 @@
 
 .header__nav-space {
     width: 10px;
+}
+
+.header__nav-item.active{
+    font-weight: bold;
 }
