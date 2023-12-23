@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.getElementById('name').value = '';
         document.getElementById('revies-text').value = '';
-
+        
+        populateTableFromLocalStorage();
     }
 
     var reviewsForm = document.querySelector('.revies-form');
@@ -46,7 +47,9 @@ function addRow(name, rating, review) {
 
 function populateTableFromLocalStorage() {
     var storedData = JSON.parse(localStorage.getItem("reviews")) || [];
+    var table = document.getElementById("reviews-table__lines");
 
+    table.innerHTML = "";
     storedData.forEach(function(item) {
         addRow(item.name, item.rating, item.revies_text);
     });
